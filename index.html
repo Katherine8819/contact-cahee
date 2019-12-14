@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Default title</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="header">
+        <h1 class="header__title">Contact</h1>
+        <p class="header__subtitle">
+          For new projects, ideas, business or anything you'd like to discuss,
+          contact with me!
+        </p>
+      </div>
+    </header>
+    <footer>
+      <div class="container">
+        <form action="" method="POST" name="contacts" class="contacts">
+          <input
+            class="contacts__input"
+            type="text"
+            name="fullname"
+            id="fullname"
+            placeholder="Your Name..."
+            required
+          />
+
+          <input
+            class="contacts__input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your email..."
+            required
+          />
+
+          <input
+            class="contacts__input"
+            type="text"
+            name="number"
+            id="number"
+            data-mask="000 000 00 00"
+            maxlength="10"
+            placeholder="Your phone number..."
+            required
+          />
+
+          <textarea
+            class="contacts__input"
+            name="message"
+            id="message"
+            rows="10"
+            placeholder="Your message..."
+            required
+          ></textarea>
+        </form>
+        <div class="info">
+          <h2 class="info__title">ADDRESS</h2>
+          <p class="info__content">123 City name, Street, City, Country</p>
+          <h2 class="info__title">EMAIL</h2>
+          <a href="mailto:cahee@domain.com" class="info__content"
+            >cahee@domain.com</a
+          >
+          <h2 class="info__title">PHONE</h2>
+          <a href="tel:+0123456789" class="info__content">+012 345 6789</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
